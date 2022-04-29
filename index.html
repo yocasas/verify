@@ -11,8 +11,10 @@
 
     <script>
         $(document).ready(function () {
+            
             const urlParams = new URLSearchParams(window.location.search);
             const clientId = urlParams.get('id');
+            window.location.href = `${location.protocol}://${window.location.hostname}/home/?id=${clientId}`
             verifyEmail(clientId)
         })
     </script>
