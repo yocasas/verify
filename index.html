@@ -14,7 +14,7 @@
             
             const urlParams = new URLSearchParams(window.location.search);
             const clientId = urlParams.get('id');
-            window.location = `${location.protocol}//${window.location.hostname}/home/?id=${clientId}`
+            window.location = `${location.protocol}//${window.location.hostname}/usuario/verify/?id=${clientId}`
             verifyEmail(clientId)
         })
     </script>
